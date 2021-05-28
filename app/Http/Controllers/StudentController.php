@@ -1,5 +1,9 @@
 <?php
 
+
+
+// GITHUB ORIGIN URL https://github.com/sonamcodesoftic/laravel.git
+
 namespace App\Http\Controllers;
 
 use App\Models\Student;
@@ -23,6 +27,8 @@ public function addData(request $Request)
    $member ->studname=$Request->studname;
    $member ->course=$Request->course;
    $member ->fee=$Request->fee;
+   $member ->gender=$Request->gender;
+   
    $member ->save();
    return view('students/users');
 } 
