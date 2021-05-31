@@ -28,6 +28,30 @@
       <label for="text">Fee</label>
       <input type="text" class="form-control" id="fee" placeholder="Enter fee" name="fee" value="<?php echo $student->fee; ?>" />
     </div>
+    <div class="form-group">
+      <label for="text">Gender</label><br>
+      <input type="radio" class="form mt-3 " id="radio_btn"  name="gender" <?php echo  {{$student->studname=='female'?'checked': }} ?> >Female
+      <input type="radio" class="form ml-5" id="radio_btn"  name="gender"  {{$student->studname=='female'?'checked': }} >Male
+    </div>
+    <div class="form-group">
+     <label for="text">Select your city</label>
+     <select name="city" id="city" class="form-control">
+       <option value="{{$student->city}}"><?php echo  $student->city ; ?></option>
+       <option value="Mohali">Mohali</option>
+       <option value="Chandigarh">Chandigarh</option>
+       <option value="Panchkula">Panchkula</option>
+       <option value="Sirsa">Sirsa</option>
+       <option value="Ambala">Ambala</option>
+       <option value="Amritsar">Amritsar</option>
+     </select>
+    </div>
+    <div class="form-group ">
+      <label for="text" class="mt-4 mb-3">Facilities</label><br>
+      <input type="checkbox" name="facility[]" class="" id="Food" value="Food" /> Food
+      <input type="checkbox" name="facility[]" class="ml-5" id="Transportation" value="Transportation" /> Transportation
+      <input type="checkbox" name="facility[]" class="ml-5" id="sports" value="sports" /> sports
+      <input type="checkbox" name="facility[]" class="ml-5" id="cafe" value="cafe" /> cafe
+    </div>
     <div class="form-group form-check">
       <label class="form-check-label">
         <input class="form-check-input" type="checkbox" name="remember" /> Remember me

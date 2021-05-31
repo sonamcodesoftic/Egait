@@ -15,18 +15,22 @@
       }
       th
       {
-        padding:10px 40px 10px 40px;
+        padding:10px 30px 10px 30px;
       }
       td
       {
-        padding:10px 40px 10px 40px ;
+        padding:10px 30px 10px 30px ;
       }
       a
       {
         color:white!important;
         text-decoration:none!important;
       }
-  </style>
+      .actions
+      {
+        text-align:center;
+      }
+  </style>  
 </head>
 <body>
 
@@ -38,7 +42,10 @@
             <th>Name</th>
             <th>Course</th>
             <th>Fee</th>
-            <th colspan="2">Actions</th>
+            <th>gender</th>
+            <th>city</th>
+            <th>facility</th>
+            <th colspan="2" class="actions">Actions</th>
           </tr>
           <?php $count = "1";   ?>
           @foreach($books as $user)   
@@ -47,6 +54,9 @@
               <td>{{$user->studname}}</td>
               <td>{{$user->course}}</td>
               <td>{{$user->fee}}</td>
+              <td>{{$user->gender}}</td>
+              <td>{{$user->city}}</td>
+              <td>{{$user->facility}}</td>
               <!-- <td><button class="btn btn-primary"><a href='update/{{$user->id}}'>update</a></button></td> -->
               <td><button class="btn btn-primary"><a href='update/{{$user->id}}'>update</a></button></td>
               <td><button class="btn btn-primary"><a href='#'>Delete</a></button></td>

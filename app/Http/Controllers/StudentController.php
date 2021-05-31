@@ -28,9 +28,13 @@ public function addData(request $Request)
    $member ->course=$Request->course;
    $member ->fee=$Request->fee;
    $member ->gender=$Request->gender;
+   $member ->city=$Request->city;
+   $member ->facility=implode(',', $Request->facility);
+   
    
    $member ->save();
-   return view('students/users');
+   echo "Thankyou For submission";
+//    return view('students/users');
 } 
 
 public function update($student_id)
@@ -48,6 +52,9 @@ public function posteditdata(request $Request,$id)
  $member ->studname=$Request->studname;
  $member ->course=$Request->course;
  $member ->fee=$Request->fee;
+ $member ->gender=$Request->gender;
+ $member ->city=$Request->city;
+ $member ->facility=implode(',', $Request->facility);
      $member->save();
      return view('students/index');
      

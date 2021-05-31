@@ -30,8 +30,8 @@
     </div>
     <div class="form-group">
       <label for="text">Gender</label><br>
-      <input type="radio" class="form mt-3 " id="radio_btn"  name="gender">Female
-      <input type="radio" class="form ml-5" id="radio_btn"  name="gender">Male
+      <input type="radio" class="form mt-3 " id="radio_btn"  name="gender" value="Female">Female
+      <input type="radio" class="form ml-5" id="radio_btn"  name="gender" value="Male">Male
     </div>
     <div class="form-group">
      <label for="text">Select your city</label>
@@ -46,10 +46,10 @@
     </div>
     <div class="form-group ">
       <label for="text" class="mt-4 mb-3">Facilities</label><br>
-      <input type="checkbox" name="facility" class="" id="Food" value="Food" /> Food
-      <input type="checkbox" name="facility" class="ml-5" id="Transportation" value="Transportation" /> Transportation
-      <input type="checkbox" name="facility" class="ml-5" id="sports" value="sports" /> sports
-      <input type="checkbox" name="facility" class="ml-5" id="cafe" value="cafe" /> cafe
+      <input type="checkbox" name="facility[]" class="" id="Food" value="Food" /> Food
+      <input type="checkbox" name="facility[]" class="ml-5" id="Transportation" value="Transportation" /> Transportation
+      <input type="checkbox" name="facility[]" class="ml-5" id="sports" value="sports" /> sports
+      <input type="checkbox" name="facility[]" class="ml-5" id="cafe" value="cafe" /> cafe
     </div>
     <div class="form-group form-check ">
       <label class="form-check-label mt-3">
