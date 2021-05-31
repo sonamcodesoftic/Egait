@@ -36,4 +36,8 @@ Route::get('update/{id}',"App\Http\Controllers\StudentController@update");
 
 Route::post('submit/{id}',"App\Http\Controllers\StudentController@posteditdata");
 
+// delete data
+
+Route::get('delete/{id}',"App\Http\Controllers\StudentController@deletedata");
+
 // Route::post('/action_page',"App\Http\Controllers\new@create");

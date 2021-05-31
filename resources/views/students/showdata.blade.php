@@ -59,7 +59,7 @@
               <td>{{$user->facility}}</td>
               <!-- <td><button class="btn btn-primary"><a href='update/{{$user->id}}'>update</a></button></td> -->
               <td><button class="btn btn-primary"><a href='update/{{$user->id}}'>update</a></button></td>
-              <td><button class="btn btn-primary"><a href='#'>Delete</a></button></td>
+              <td><button class="btn btn-primary"><a href='delete/{{$user->id}}'>Delete</a></button></td>
             </tr>  
             <?php $count++;  ?>
           @endforeach

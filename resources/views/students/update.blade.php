@@ -30,8 +30,8 @@
     </div>
     <div class="form-group">
       <label for="text">Gender</label><br>
-      <input type="radio" class="form mt-3 " id="radio_btn"  name="gender" <?php echo  {{$student->studname=='female'?'checked': }} ?> >Female
-      <input type="radio" class="form ml-5" id="radio_btn"  name="gender"  {{$student->studname=='female'?'checked': }} >Male
+      <input type="radio" class="form mt-3 " id="radio_btn"  name="gender"  value="female" >Female
+      <input type="radio" class="form ml-5" id="radio_btn"  name="gender"  value="male">Male
     </div>
     <div class="form-group">
      <label for="text">Select your city</label>

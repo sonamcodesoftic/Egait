@@ -56,22 +56,13 @@ public function posteditdata(request $Request,$id)
  $member ->city=$Request->city;
  $member ->facility=implode(',', $Request->facility);
      $member->save();
-     return view('students/index');
-     
+     return view('students/showdata');
+}
 
-
-
-    // $student_edit = Student::find('student_id');
-   
-    // $student_edit ->studname=$Request->studname;
-    // $student_edit ->course=$Request->course;
-    // $student_edit ->save();
-//     $student_edit ->studname=$Request->studname;
-//    $student_edit ->course=$Request->course;
-//    $student_edit ->fee=$Request->fee;
-//    $student_edit ->save();
-    // echo "Thanks";
-// ;
+public function deletedata(request $Request,$id)
+{
+    $member = Student:: find($id);  
+    $member->delete();
 }
 
 // By default function created starts
